@@ -215,7 +215,7 @@ def get_length_intersect_geometries(geometry_a, geometry_b):
 
 
 def get_oid_of_longest_border(fc, original_oid):
-    geometry = get_geometry_by_objectid(fc, orig_oid)
+    geometry = get_geometry_by_objectid(fc, original_oid)
     touching_polygon_ids = objectids_touch_feature(geometry, fc)
     intersect_lengths = []
     for oid in touching_polygon_ids:
